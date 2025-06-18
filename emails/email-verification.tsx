@@ -38,8 +38,11 @@ export const EmailVerification = ({
       <Preview>{previewText}</Preview>
       <Tailwind>
         <Body className="mx-auto my-auto bg-white px-2 font-sans">
+          <Container className="hidden">
+            verificationLink:{verificationLink}
+          </Container>
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-[#eaeaea] border-solid p-[20px]">
-            <Section className="mt-[32px] bg-gray-100 rounded-lg p-4 shadow-sm">
+            <Section className="mt-[32px] bg-gray-100 p-4">
               <Heading className="mx-0 my-0 p-0 text-center font-bold text-[24px]">
                 {appName}
               </Heading>
